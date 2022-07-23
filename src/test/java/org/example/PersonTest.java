@@ -23,7 +23,9 @@ class PersonTest {
         String nullLastName = null;
 
         Exception exception = assertThrows(IllegalArgumentException.class, () -> person.setLastName(nullLastName));
-        assertEquals("not allowed to be null",exception.getMessage());
+        assertEquals("not allowed to be null", exception.getMessage());
+
+
 
     }
 
