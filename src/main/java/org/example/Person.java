@@ -1,10 +1,13 @@
 package org.example;
 
+import java.util.Objects;
+
 public class Person {
     private int id;
     private String firstName;
     private String lastName;
     private String email;
+    private AppUser credential;
 
     public Person(int id, String firstName, String lastName, String email) {
         if (firstName == null) {
@@ -22,6 +25,27 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return id == person.id && Objects.equals(firstName, person.firstName) && Objects.equals(lastName, person.lastName) && Objects.equals(email, person.email);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName, email);
+    }
+
+    public AppUser getCredential() {
+        return credential;
+    }
+
+    public void setCredential(AppUser credential) {
+        this.credential = credential;
     }
 
     public int getId() {
@@ -66,9 +90,11 @@ public class Person {
         this.email = email;
     }
 
-    public String getSummary() {
+
+
+    /*public String getSummary() {
         return " the object summary is " +this.toString();
-    }
+    }*/
 
     @Override
     public String toString() {

@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Objects;
+
 public class ToDoItemTask {
     private int id;
     private boolean assigned;
@@ -25,10 +27,7 @@ public class ToDoItemTask {
     }
 
     public boolean isAssigned() {
-        if (assignee!=null){
-            return true;
-        }
-        return false;
+        return assignee != null;
     }
 
     public void setAssigned(boolean assigned) {
@@ -49,5 +48,27 @@ public class ToDoItemTask {
 
     public void setPerson(Person person) {
         this.assignee = person;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ToDoItemTask that = (ToDoItemTask) o;
+        return id == that.id && assigned == that.assigned && toDoItem.equals(that.toDoItem);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, assigned, toDoItem);
+    }
+
+    @Override
+    public String toString() {
+        return "ToDoItemTask{" +
+                "id=" + id +
+                ", assigned=" + assigned +
+                ", toDoItem=" + toDoItem +
+                '}';
     }
 }

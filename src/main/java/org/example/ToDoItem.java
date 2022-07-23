@@ -2,6 +2,7 @@ package org.example;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 public class ToDoItem {
     private int id;
@@ -83,9 +84,9 @@ public class ToDoItem {
     public boolean isOverDue(){
         return deadLine.isBefore(LocalDate.now());
     }
-    public String getSummary() {
+    /*public String getSummary() {
         return " the object summary is " +this.toString();
-    }
+    }*/
 
 
     @Override
@@ -96,7 +97,20 @@ public class ToDoItem {
                 ", description='" + description + '\'' +
                 ", deadLine=" + deadLine +
                 ", done=" + done +
-                ", creator=" + creator +
                 '}';
+
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ToDoItem item = (ToDoItem) o;
+        return id == item.id && done == item.done && Objects.equals(title, item.title) && Objects.equals(description, item.description) && Objects.equals(deadLine, item.deadLine);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, title, description, deadLine, done);
     }
 }
