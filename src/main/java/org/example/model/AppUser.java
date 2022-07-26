@@ -1,8 +1,5 @@
-package org.example;
+package org.example.model;
 
-import com.sun.xml.internal.ws.developer.MemberSubmissionAddressing;
-
-import javax.xml.bind.ValidationEvent;
 import java.util.Objects;
 
 public class AppUser {

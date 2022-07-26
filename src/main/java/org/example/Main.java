@@ -1,6 +1,10 @@
 package org.example;
 
 
+import org.example.model.Person;
+import org.example.model.ToDoItem;
+import org.example.model.ToDoItemTask;
+
 import java.time.LocalDate;
 
 public class Main {
