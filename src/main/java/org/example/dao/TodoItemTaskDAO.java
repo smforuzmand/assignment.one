@@ -5,7 +5,7 @@ import org.example.model.ToDoItemTask;
 import java.util.List;
 
 public interface TodoItemTaskDAO {
-    ToDoItemTask persist(String todoItemTask);
+    ToDoItemTask persist(ToDoItemTask todoItemTask);
 
     ToDoItemTask findById(int id);
 

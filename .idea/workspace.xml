@@ -4,29 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db82d69-bc84-40bf-832d-ee554683264c" name="Changes" comment="class AppUser and AppRole add">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/AppUserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/TodoItemDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/TodoItemTaskDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/AppUserDAoCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/PersonDAOCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/TodoItemDAOCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/TodoItemTaskDAOCollection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/sequencer/PersonIdSequencer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/sequencer/TodoItemIdSequencer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/sequencer/TodoItemTaskIdSequencer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/ToDoItemTaskTest.java" afterDir="false" />
+    <list default="true" id="2db82d69-bc84-40bf-832d-ee554683264c" name="Changes" comment="Collections Implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/AppRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AppUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/AppUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ToDoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/ToDoItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ToDoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/ToDoItemTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/PersonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ToDoItemTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/TodoItemTaskDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/TodoItemTaskDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/AppUserDAoCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/AppUserDAoCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/PersonDAOCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/PersonDAOCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/TodoItemDAOCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/TodoItemDAOCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/TodoItemTaskDAOCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/TodoItemTaskDAOCollection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,16 +39,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/caree/OneDrive/Desktop/junit5 unit test"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/caree/OneDrive/Desktop/junit5 unit test&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -76,7 +60,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.org.example.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="assignment.one" />
@@ -139,7 +123,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.org.example.Main" />
         <item itemvalue="JUnit.PersonTest" />
         <item itemvalue="JUnit.PersonTest.setLastNameWhenNull" />
         <item itemvalue="JUnit.PersonTest.setLastName" />
@@ -183,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658594005475</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Central Storage adds through DAO Pattern including Collections">
+      <created>1658825897759</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1658825897759</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Collections Implemented">
+      <created>1658860581081</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658860581081</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +198,8 @@
     <MESSAGE value="first test of Person Class!" />
     <MESSAGE value="test of Person Class!" />
     <MESSAGE value="class AppUser and AppRole add" />
-    <option name="LAST_COMMIT_MESSAGE" value="class AppUser and AppRole add" />
+    <MESSAGE value="Central Storage adds through DAO Pattern including Collections" />
+    <MESSAGE value="Collections Implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="Collections Implemented" />
   </component>
 </project>

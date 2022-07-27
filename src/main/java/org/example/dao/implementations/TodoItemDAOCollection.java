@@ -11,7 +11,7 @@ import java.util.List;
 
 public class TodoItemDAOCollection implements TodoItemDAO {
 
-    List<ToDoItem>toDoItems;
+    List<ToDoItem> toDoItems;
 
     public TodoItemDAOCollection() {
         toDoItems = new ArrayList<>();
@@ -19,7 +19,7 @@ public class TodoItemDAOCollection implements TodoItemDAO {
 
     @Override
     public ToDoItem persist(ToDoItem toDoItem) {
-        if (toDoItem==null) throw new RuntimeException("Null in not allowed");
+        if (toDoItem == null) throw new RuntimeException("Null in not allowed");
         toDoItem.setId(TodoItemIdSequencer.nextId());
         toDoItems.add(toDoItem);
 
@@ -29,7 +29,7 @@ public class TodoItemDAOCollection implements TodoItemDAO {
     @Override
     public ToDoItem findById(int id) {
         for (ToDoItem item : toDoItems) {
-            if (item.getId()==id)
+            if ((item.getId() == id) && (id != 0))
                 return item;
 
         }
@@ -46,7 +46,7 @@ public class TodoItemDAOCollection implements TodoItemDAO {
     public List<ToDoItem> findAllByDoneStatus(boolean done) {
 
         for (ToDoItem item : toDoItems) {
-            if (item.isDone()==true)
+            if (item.isDone() == done)
                 return toDoItems;
         }
 
@@ -68,7 +68,7 @@ public class TodoItemDAOCollection implements TodoItemDAO {
     match todoItem.creator.id*/
     public List<ToDoItem> findByPersonId(int personId) {
         for (ToDoItem item : toDoItems) {
-            if (item.getCreator().getId()==personId)
+            if (item.getCreator().getId() == personId)
                 return toDoItems;
         }
         return null;
@@ -77,7 +77,7 @@ public class TodoItemDAOCollection implements TodoItemDAO {
 
     @Override
     /*findByDeadlineBefore: returns many TodoItem.class objects where date is before deadline
-*/
+     */
     public List<ToDoItem> findByDeadLineBefore(LocalDate date) {
         for (ToDoItem item : toDoItems) {
             if (item.getDeadLine().isBefore(date))

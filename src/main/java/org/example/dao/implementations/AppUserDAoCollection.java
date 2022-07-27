@@ -24,9 +24,9 @@ public class AppUserDAoCollection implements AppUserDAO {
     @Override
     //findByUsername: returns single AppUser.class object
     public AppUser findByUserName(String userName) {
-        for (AppUser a : appUsers){
-            if (a.getUserName().equalsIgnoreCase(userName))
-                return a;
+        for (AppUser user : appUsers){
+            if (user.getUserName().equalsIgnoreCase(userName))
+                return user;
     }
 
         return null;
