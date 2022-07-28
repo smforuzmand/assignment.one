@@ -23,7 +23,8 @@ class PersonTest {
         Person person = new Person(10, "erik", "sson", "sson@email.com");
         String nullLastName = null;
 
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> person.setLastName(nullLastName));
+        Exception exception = assertThrows(IllegalArgumentException.class,
+                () -> person.setLastName(nullLastName));
         assertEquals("not allowed to be null", exception.getMessage());
 
 
