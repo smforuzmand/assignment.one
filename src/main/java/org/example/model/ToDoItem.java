@@ -41,7 +41,7 @@ public class ToDoItem {
 
     public void setTitle(String title) {
         if (title==null || title.trim().equals("")){
-            throw new IllegalArgumentException("title not allowed");
+            throw new IllegalArgumentException("not allowed to be null");
         }
         this.title = title;
     }
