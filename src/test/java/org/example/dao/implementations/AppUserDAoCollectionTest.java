@@ -19,7 +19,7 @@ class AppUserDAoCollectionTest {
     }
 
     @Test
-    void test_persist_AppUser() {
+    void testpersistAppUser() {
 
         AppUser appUserTest = new AppUser("Meta", "12213443", AppRole.ROLE_APP_USER);
 
@@ -49,7 +49,7 @@ class AppUserDAoCollectionTest {
     }
 
     @Test
-    void remove() {
+    void testRemove() {
         testFindAll();
         appUserDAOTest.remove("sss");
         Assertions.assertEquals(1,appUserDAOTest.findAll().size());
