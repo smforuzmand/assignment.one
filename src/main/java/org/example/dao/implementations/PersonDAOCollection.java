@@ -18,7 +18,7 @@ private static PersonDAOCollection instance;
         personList=new ArrayList<>();
     }
 
-// providing the public static method to return the only object and access from outer world
+    // providing the public static method to return the only object and access from outer world
     public static PersonDAOCollection getInstance() {
         if (instance==null){
             instance = new PersonDAOCollection();
@@ -37,7 +37,6 @@ private static PersonDAOCollection instance;
         personList.add(person);
         return person;
     }
-
     @Override
     public Person findById(int id) {
         for (Person p : personList) {

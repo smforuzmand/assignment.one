@@ -8,13 +8,13 @@ import java.util.List;
 
 public class AppUserDAOCollection implements AppUserDAO {
 
-    private static AppUserDAOCollection instance ;
-    private  List<AppUser> appUsers;
+    private static AppUserDAOCollection instance;
+    private List<AppUser> appUsers;
 
 
     //make constructor private to avoid instantiating
 
-    private AppUserDAOCollection(){
+    private AppUserDAOCollection() {
         appUsers = new ArrayList<>();
     }
 
@@ -30,7 +30,7 @@ public class AppUserDAOCollection implements AppUserDAO {
     @Override
     //persist: add new AppUser.class object to collection
     public AppUser persist(AppUser appUser) {
-        if (appUser==null) throw new RuntimeException("null object in not allowed");
+        if (appUser == null) throw new RuntimeException("null object in not allowed");
         appUsers.add(appUser);
         return appUser;
     }
@@ -38,10 +38,10 @@ public class AppUserDAOCollection implements AppUserDAO {
     @Override
     //findByUsername: returns single AppUser.class object
     public AppUser findByUserName(String userName) {
-        for (AppUser user : appUsers){
+        for (AppUser user : appUsers) {
             if (user.getUserName().equalsIgnoreCase(userName))
                 return user;
-    }
+        }
 
         return null;
     }

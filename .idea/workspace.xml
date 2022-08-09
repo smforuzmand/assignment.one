@@ -4,24 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2db82d69-bc84-40bf-832d-ee554683264c" name="Changes" comment="Unit test execute">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MainApplication.java" afterDir="false" />
+    <list default="true" id="2db82d69-bc84-40bf-832d-ee554683264c" name="Changes" comment="Singleton Implementation">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/model/AppUserTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/AppUserDAoCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/AppUserDAOCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/AppUserDAOCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/AppUserDAOCollection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/PersonDAOCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/PersonDAOCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/TodoItemDAOCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/TodoItemDAOCollection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/TodoItemTaskDAOCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/implementations/TodoItemTaskDAOCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/sequencer/PersonIdSequencer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/sequencer/PersonIdSequencer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/sequencer/TodoItemIdSequencer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/sequencer/TodoItemIdSequencer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/sequencer/TodoItemTaskIdSequencer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/sequencer/TodoItemTaskIdSequencer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/ToDoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/ToDoItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/ToDoItemTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/ToDoItemTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/ToDoItemTaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/model/ToDoItemTaskTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/dao/implementations/AppUserDAoCollectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/dao/implementations/AppUserDAOCollectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/model/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/model/PersonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/model/ToDoItemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/model/ToDoItemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/model/ToDoItemTaskTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/model/ToDoItemTaskTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,21 +65,40 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainApplication">
-    <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.MainApplication" />
+  <component name="RunManager" selected="JUnit.PersonTest.setFirstName_Null_Throw_IllegalArgumentException">
+    <configuration name="AppUserTest.setPassword_null_throw_IllegalArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assignment.one.singleton" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.example.model" />
+      <option name="MAIN_CLASS_NAME" value="org.example.model.AppUserTest" />
+      <option name="METHOD_NAME" value="setPassword_null_throw_IllegalArgumentException" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PersonTest.setLastName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppUserTest.test_equal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assignment.one.singleton" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.model" />
+      <option name="MAIN_CLASS_NAME" value="org.example.model.AppUserTest" />
+      <option name="METHOD_NAME" value="test_equal" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.setEmail_null_ThrowIllegalArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="assignment.one.singleton" />
       <extension name="coverage">
         <pattern>
@@ -99,14 +108,30 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.model" />
       <option name="MAIN_CLASS_NAME" value="org.example.model.PersonTest" />
-      <option name="METHOD_NAME" value="setLastName" />
+      <option name="METHOD_NAME" value="setEmail_null_ThrowIllegalArgumentException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.setFirstName_Null_Throw_IllegalArgumentException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assignment.one.singleton" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.model" />
+      <option name="MAIN_CLASS_NAME" value="org.example.model.PersonTest" />
+      <option name="METHOD_NAME" value="setFirstName_Null_Throw_IllegalArgumentException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="PersonTest.setLastNameWhenNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="assignment.one" />
+      <module name="assignment.one.singleton" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.model.*" />
@@ -121,45 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ToDoItemTaskTest.setToDoItemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="assignment.one" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.model" />
-      <option name="MAIN_CLASS_NAME" value="org.example.model.ToDoItemTaskTest" />
-      <option name="METHOD_NAME" value="setToDoItemTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ToDoItemTest.testHashCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="assignment.one" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.model" />
-      <option name="MAIN_CLASS_NAME" value="org.example.model.ToDoItemTest" />
-      <option name="METHOD_NAME" value="testHashCode" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainApplication" />
-        <item itemvalue="JUnit.PersonTest.setLastName" />
+        <item itemvalue="JUnit.PersonTest.setFirstName_Null_Throw_IllegalArgumentException" />
         <item itemvalue="JUnit.PersonTest.setLastNameWhenNull" />
-        <item itemvalue="JUnit.ToDoItemTaskTest.setToDoItemTest" />
-        <item itemvalue="JUnit.ToDoItemTest.testHashCode" />
+        <item itemvalue="JUnit.PersonTest.setEmail_null_ThrowIllegalArgumentException" />
+        <item itemvalue="JUnit.AppUserTest.test_equal" />
+        <item itemvalue="JUnit.AppUserTest.setPassword_null_throw_IllegalArgumentException" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659280358536</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Singleton Implementation">
+      <created>1660035425954</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660035425954</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -270,7 +270,8 @@
     <MESSAGE value="Central Storage adds through DAO Pattern including Collections" />
     <MESSAGE value="Collections Implemented" />
     <MESSAGE value="Unit test execute" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unit test execute" />
+    <MESSAGE value="Singleton Implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Singleton Implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -311,6 +312,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/model/AppUserTest.java</url>
+          <line>20</line>
+          <properties class="org.example.model.AppUserTest" method="getUserName_Test_successfully">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

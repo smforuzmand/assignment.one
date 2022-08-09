@@ -22,7 +22,7 @@ public class TodoItemTaskDAOCollection implements TodoItemTaskDAO {
     //the static method to return the only instance, the global access point for outer world to get the instance
     public static TodoItemTaskDAOCollection getInstance() {
         if (instance == null) {
-            instance= new TodoItemTaskDAOCollection();
+            instance = new TodoItemTaskDAOCollection();
         }
         return instance;
     }

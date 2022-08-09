@@ -48,8 +48,6 @@ class ToDoItemTaskTest {
 
         Assertions.assertTrue(doItemTask.isAssigned());
 
-
-
     }
 
 }
