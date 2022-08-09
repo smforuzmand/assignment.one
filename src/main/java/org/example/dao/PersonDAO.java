@@ -11,7 +11,7 @@ public interface PersonDAO {
     Person findByEmail (String email);
     List<Person> findAll();
 
-    void remove(int id);
+    boolean remove(int id);
 
 
 }

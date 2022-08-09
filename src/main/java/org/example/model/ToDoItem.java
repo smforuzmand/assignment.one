@@ -83,9 +83,9 @@ public class ToDoItem {
     public boolean isOverDue(){
         return deadLine.isBefore(LocalDate.now());
     }
-    /*public String getSummary() {
-        return " the object summary is " +this.toString();
-    }*/
+    public String getSummary() {
+        return this.toString();
+    }
 
 
     @Override
@@ -109,6 +109,7 @@ public class ToDoItem {
     }
 
     @Override
+
     public int hashCode() {
         return Objects.hash(id, title, description, deadLine, done);
     }

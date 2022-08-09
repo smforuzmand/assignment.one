@@ -8,6 +8,10 @@ public class ToDoItemTask {
     private ToDoItem toDoItem;
     private Person assignee;
 
+    public ToDoItemTask() {
+
+    }
+
     public ToDoItemTask(int id, ToDoItem toDoItem, Person assignee) {
 
         this.id = id;
@@ -17,6 +21,8 @@ public class ToDoItemTask {
             assigned=true;
         }
     }
+
+
 
     public int getId() {
         return id;

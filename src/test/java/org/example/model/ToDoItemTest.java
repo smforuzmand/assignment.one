@@ -10,6 +10,7 @@ import java.time.LocalDate;
 import static org.junit.jupiter.api.Assertions.*;
 
 class ToDoItemTest {
+    public Person person;
 
     Person person1 = new Person(10, "erik", "sson", "sson@email.com");
 
@@ -62,7 +63,6 @@ class ToDoItemTest {
 
         String expectedToStringTest = toDoItem.toString();
         assertEquals(toDoItem.getSummary(), expectedToStringTest);
-
         assertEquals(toDoItem.toString(), "ToDoItem{id=1, title='playBoy', description='Agility with Jira', deadLine=2021-09-30, done=true}");
 
     }
@@ -70,6 +70,10 @@ class ToDoItemTest {
     @Test
     void testHashCode() {
 
+        ToDoItem toDoItem = new ToDoItem(1, "playBoy", "Agility with Jira",
+                LocalDate.of(2021, 9, 30), true, person1);
+        int hasCodeTest = toDoItem.hashCode();
+        assertEquals(toDoItem.hashCode(),hasCodeTest);
 
     }
 }

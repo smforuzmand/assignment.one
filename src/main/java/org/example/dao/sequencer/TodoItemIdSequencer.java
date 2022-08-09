@@ -2,7 +2,7 @@ package org.example.dao.sequencer;
 
 public class TodoItemIdSequencer {
 
-    private static int currentId=1;
+    private static int currentId=0;
 
 
     public static int nextId(){

@@ -1,3 +1,4 @@
+
 package org.example.model;
 
 import org.example.model.Person;
@@ -15,6 +16,7 @@ class PersonTest {
         person.setLastName("foruzmand");
         assertEquals("foruzmand", person.getLastName());
 
+
     }
 
     @Test
@@ -26,6 +28,8 @@ class PersonTest {
         Exception exception = assertThrows(IllegalArgumentException.class,
                 () -> person.setLastName(nullLastName));
         assertEquals("not allowed to be null", exception.getMessage());
+        assertNull(null,nullLastName);
+
 
 
 

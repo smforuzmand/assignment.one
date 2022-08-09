@@ -3,14 +3,28 @@ package org.example.dao.implementations;
 import org.example.dao.AppUserDAO;
 import org.example.model.AppUser;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class AppUserDAoCollection implements AppUserDAO {
+public class AppUserDAOCollection implements AppUserDAO {
 
-    private List<AppUser> appUsers;
+    private static AppUserDAOCollection instance ;
+    private  List<AppUser> appUsers;
 
-    public AppUserDAoCollection(List<AppUser> appUsers) {
-        this.appUsers = appUsers;
+
+    //make constructor private to avoid instantiating
+
+    private AppUserDAOCollection(){
+        appUsers = new ArrayList<>();
+    }
+
+    //Get the only object available
+    public static AppUserDAOCollection getInstance() {
+        if (instance == null) {
+            instance = new AppUserDAOCollection();
+        }
+        //return the AppUserDAoCollection object
+        return instance;
     }
 
     @Override

@@ -11,18 +11,28 @@ import java.util.List;
 
 public class TodoItemDAOCollection implements TodoItemDAO {
 
+    // create the only object of the class
+    private static TodoItemDAOCollection instance;
     List<ToDoItem> toDoItems;
 
-    public TodoItemDAOCollection() {
+    //private the constructor to avoid instantiating
+    private TodoItemDAOCollection() {
         toDoItems = new ArrayList<>();
     }
 
+    public static TodoItemDAOCollection getInstance() {
+        if (instance == null) {
+            instance = new TodoItemDAOCollection();
+        }
+        return instance;
+    }
+
     @Override
+
     public ToDoItem persist(ToDoItem toDoItem) {
         if (toDoItem == null) throw new RuntimeException("Null in not allowed");
         toDoItem.setId(TodoItemIdSequencer.nextId());
         toDoItems.add(toDoItem);
-
         return toDoItem;
     }
 
@@ -48,6 +58,7 @@ public class TodoItemDAOCollection implements TodoItemDAO {
         for (ToDoItem item : toDoItems) {
             if (item.isDone() == done)
                 return toDoItems;
+            else throw new RuntimeException("The task is not done already : ");
         }
 
         return null;
